@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background: #eee;
+    }
+    header{
+        border: 1px solid white;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        position: static;
+        top: 0;
+        background: linear-gradient(45deg, #ff4b3b, #ff416c);
+    }
+    .logoImg{
+        margin-left: 38%;
+    }
+    .navbar{
+        background: linear-gradient(45deg, #ff4b3b, #ff416c);
+        border: 1px solid white;
+        border-top: 0;
+        padding: 10px;
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        position: sticky;
+        top: 0;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 530;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        position: sticky;
+        top: 0;
+    }
+    
+    #logout{
+    	float: right; 
+    	position: relative;
+    	bottom: 12px;
+    	right: 6px;
+    	font-weight: 500;
+    }
+	#showRequest{
+		border: 2px solid white;
+        padding: 7px 12px;
+		border-radius: 30px;
+	}
+	#viewLoan{
+		border: 2px solid white;
+        padding: 7px 12px;
+		border-radius: 30px;
+	}
+	#activeLoans{
+		border: 2px solid white;
+        padding: 7px 12px;
+		border-radius: 30px;
+	}
+	#history{
+		border: 2px solid white;
+        padding: 7px 12px;
+		border-radius: 30px;
+	}
+
+    section{
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        color: teal;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .message{
+    	margin-top: 20px;
+    	color: red;
+    }
+    .approved{
+        color: green;
+    }
+    .rejected{
+        color: red;
+    }
+
+    .request-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: .9em;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 25px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0px 0px 28px rgba(0,0,0, .25);
+    }
+    .request-table thead tr{
+        background: linear-gradient(45deg,#ff416c, #ff4b3b);
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+    .request-table th,
+    .request-table td{
+        padding: 13px 16px;
+    }
+    .request-table tbody tr{
+        border-bottom: 1px solid #dddddd;
+    }
+    .request-table tbody tr:nth-of-type(even){
+        background-color: #f3f3f3;
+    }
+    .request-table tbody tr:last-of-type{
+        border-bottom: 2px solid #ff4b3b;
+    }
+    .request-table .name{
+        color: teal;
+        font-weight: 600;
+    }
+    .request-table .red{
+        color: red;
+        font-weight: 600;
+    }
+    .request-table button{
+        border-radius: 20px;
+        border: 1px solid #FF4B2B;
+        color: white;
+        font-size: 9px;
+        font-weight: bold;
+        padding: 3px 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    	transition: .8 ease-in;
+    }
+    
+    button:active{
+        transform: scale(.95);
+    }
+    .request-table .approve{
+        background-color: #2dc653;
+    }
+    .request-table .reject{
+        background-color: red;
+    }
+    .request-table tbody tr a{
+        text-decoration: none;
+        color: teal;
+        font-weight: 600;
+    }
+
+
+    
